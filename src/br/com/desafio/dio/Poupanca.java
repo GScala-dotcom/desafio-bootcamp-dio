@@ -4,6 +4,18 @@ public class Poupanca extends Conta{
 
     private int saldo;
 
+    public Poupanca() {
+    }
+
+    public double inserirValor() {
+        return valorInicial + getValor();
+    }
+
+    @Override
+    public double reduzirValor() {
+        return valorInicial - getValor();
+    }
+
     public int getSaldo() {
         return saldo;
     }

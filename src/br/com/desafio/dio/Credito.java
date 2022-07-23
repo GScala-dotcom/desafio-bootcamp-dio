@@ -4,11 +4,19 @@ public class Credito extends Conta {
 
     private int limite;
 
+    public Credito() {
+    }
+
+    @Override
+    public double reduzirValor() {
+        return limite - getValor();
+    }
+
     public int getLimite() {
         return limite;
     }
 
-    public void setLimiteMaximo(int limite) {
+    public void setLimite(int limite) {
         this.limite = limite;
     }
 
